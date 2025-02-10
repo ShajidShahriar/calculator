@@ -1,0 +1,153 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    min-width: 400px;
+    padding: 0px;
+    background-color:white;
+    height: 100vh
+    
+
+}
+.title{
+    padding-bottom: 60px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 290px;
+    height: auto;
+    border-style: solid;
+    padding-bottom: 8px;
+    
+    border-radius: 20px;
+    padding: 20px;
+    border-color: black;
+    background-color: rgb(0, 0, 0);
+
+    
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 9px;
+}
+
+.display-container{
+    display: flex;
+    justify-content:flex-end;
+    width: 100%;
+
+
+}
+.display {
+    font-family: "Inter", "Roboto", "Arial", sans-serif; 
+
+    width: 100%;
+    height: 80px;
+    font-size: 70px;
+    font-weight: 100;
+    color: white;
+    padding: 10px 20px; 
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
+.first-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+.second-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+.third-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 9px;
+}
+.final-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    
+}
+button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%; 
+    font-size: 24px;
+    font-weight:lighter;
+    cursor: pointer;
+}
+.first-column button{
+    color:rgb(255, 255, 255) ;
+    background-color: rgb(253, 136, 3);
+}
+.second-column button,
+.third-column button,
+.final-column button,
+.zero-container button{
+    color: aliceblue;
+    background-color: rgba(97, 97, 97, 0.511);
+}
+button:active {
+    transform: scale(0.95); /* Slight press effect */
+    filter: brightness(1.5); /* Light-up effect */
+}
+.nicher-button{
+    display: flex;
+    width: 267px;
+    padding-top: 9px;
+}
+.zero-container{
+    display: flex;
+    width: 267px;;
+    gap: 9px;
+}
+.zero{
+    flex: 2;
+    border-radius: 50px;
+    width: 120px;
+    text-align: left;
+    padding-left: 20px;
+    
+}
+#equal  {
+    background-color:rgb(253, 136, 3) ;
+}
+button.clear,
+button.backspace,
+button.negative {
+    background-color: #A5A5A5;  /* Light Gray */
+    color: black;  /* Dark text for contrast */
+}
+
+button.backspace{
+    padding-bottom: 9px;
+    
+}
