@@ -116,8 +116,8 @@ button {
     background-color: rgba(97, 97, 97, 0.511);
 }
 button:active {
-    transform: scale(0.95); /* Slight press effect */
-    filter: brightness(1.5); /* Light-up effect */
+    transform: scale(0.95);
+    filter: brightness(1.5); 
 }
 .nicher-button{
     display: flex;
@@ -143,11 +143,25 @@ button:active {
 button.clear,
 button.backspace,
 button.negative {
-    background-color: #A5A5A5;  /* Light Gray */
-    color: black;  /* Dark text for contrast */
+    background-color: #A5A5A5;  
+    color: black; 
 }
 
 button.backspace{
     padding-bottom: 9px;
     
+}
+
+button {
+    transition: all 0.2s ease-in-out; 
+}
+
+button:hover {
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
+}
+.active-operator {
+    background-color: #f1a33c !important; 
+    filter: brightness(1.2);
+    transition: 0.2s ease-in-out;
 }
