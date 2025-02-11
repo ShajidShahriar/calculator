@@ -41,6 +41,7 @@ body{
     flex-direction: row-reverse;
     justify-content: center;
     gap: 9px;
+
 }
 
 .display-container{
@@ -128,6 +129,7 @@ button:active {
     display: flex;
     width: 267px;;
     gap: 9px;
+    padding-bottom: 10px;
 }
 .zero{
     flex: 2;
